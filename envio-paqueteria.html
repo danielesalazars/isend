@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="./static/img/favicon.svg">
     <title>iSend</title>
   </head>
-  <body>
+  <body class="pagePaqueteria">
     <!-- PREVIEW -->
     <div class="preview d-none">
       <div class="vh-100 d-flex justify-content-center align-items-center">
@@ -31,7 +31,7 @@
     <section id="header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./">
             <img src="./static/img/logo.svg" alt="" class="img-responsive">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="servicios.html">
+                <a class="nav-link dropdown-toggle" href="#">
                   Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -82,8 +82,9 @@
         <div class="carousel-inner">
           <div class="SliderSombra"></div>
           <div class="carousel-item active">
-            <img src="./static/img/slider2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block SliderDescripcion">
+            <img src="./static/img/slider1.png" class="d-none d-sm-block w-100" alt="...">
+            <img src="./static/img/mobile/slider2.jpg" class="d-sm-none w-100" alt="...">
+            <div class="text-left carousel-caption SliderDescripcion mq">
               <small class="fs-400 fw-300 m-b-15">SERVICIOS</small>
               <h5 class="fw-600 fs-40">Envío de paquetería</h5>
               <p>Programa el envío de tus productos vendidos a tus clientes finales y realiza el seguimiento de entrega en línea. </p>
@@ -98,40 +99,40 @@
 
     <section id="servicios" class="p-t-b-142">
       <div class="container">
-        <div class="row p-b-150">
-          <div class="col-5 d-flex justify-content-center flex-column">
-            <h4 class="fs-24 fw-600 fc-404041">
+        <div class="row d-flex justify-content-center p-b-150">
+          <div class="order-1 col-12 col-md-5 d-flex justify-content-center flex-column">
+            <h4 class="fs-24 fw-600 fc-404041 m-b-25">
               ¿Tienes que realizar un envío? <br>Nosotros lo hacemos por ti
             </h4>
-            <p class="fc-58595B">Nuestros mensajeros están preparados para distribuir tus entregas en toda Lima Metropolitana y Callao</p>
+            <p class="fc-58595B m-b-30">Nuestros mensajeros están preparados para distribuir tus entregas en toda Lima Metropolitana y Callao</p>
           </div>
-          <div class="col-6 offset-1">
+          <div class="order-2 col-12 col-md-6 offset-md-1">
             <a href="#" class="card card-sombra">
               <img src="./static/img/servicios-1.jpg" class="card-img-top" alt="...">
             </a>
           </div>
         </div>
-        <div class="row p-b-150">
-          <div class="col-6">
+        <div class="row d-flex justify-content-center p-b-150">
+          <div class="order-2 order-md-1 col-12 col-md-6">
             <a href="#" class="card card-sombra">
               <img src="./static/img/servicios-2.jpg" class="card-img-top" alt="...">
             </a>
           </div>
-          <div class="col-5 offset-1 d-flex justify-content-center flex-column">
-            <h4 class="fs-24 fw-600 fc-404041">
+          <div class="order-1 order-md-2 col-12 col-md-5 offset-md-1 d-flex justify-content-center flex-column">
+            <h4 class="fs-24 fw-600 fc-404041 m-b-25">
               Nos aseguramos de que tus envíos lleguen a su destino
             </h4>
-            <p class="fc-58595B">Los precios por entrega incluyen hasta 2 intentos de visita en caso no se haya podido realizar el envío. También incluyen la cusodia de los productos en caso no se encuentre el cliente.</p>
+            <p class="fc-58595B m-b-30">Los precios por entrega incluyen hasta 2 intentos de visita en caso no se haya podido realizar el envío. También incluyen la cusodia de los productos en caso no se encuentre el cliente.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-5 d-flex justify-content-center flex-column">
-            <h4 class="fs-24 fw-600 fc-404041">
+        <div class="row d-flex justify-content-center">
+          <div class="order-1 col-12 col-md-5 d-flex justify-content-center flex-column">
+            <h4 class="fs-24 fw-600 fc-404041 m-b-25">
               Confirma tu entrega desde nuestra plataforma
             </h4>
-            <p class="fc-58595B">Podrás ver el estado y confirmación de tus entregas en tiempo real  desde nuestra web con total seguridad.</p>
+            <p class="fc-58595B m-b-30">Podrás ver el estado y confirmación de tus entregas en tiempo real  desde nuestra web con total seguridad.</p>
           </div>
-          <div class="col-6 offset-1">
+          <div class="order-2 col-12 col-md-6 offset-md-1">
             <a href="#" class="card card-sombra">
               <img src="./static/img/servicios-3.jpg" class="card-img-top" alt="...">
             </a>
@@ -146,7 +147,7 @@
           <div class="col-12">
             <h3 class="text-center text-white m-b-15">Atención personalizada</h3>
           </div>
-          <div class="offset-3 col-6">
+          <div class="col-12 col-md-6 offset-md-3">
             <p class="m-0 text-white text-center">Todos nuestros clientes cuentan con un gestor post venta con el que podrán confirmar la entrega de sus envíos de manera inmediata.</p>
           </div>
         </div>
@@ -156,11 +157,11 @@
     <section id="comoFunciona" class="p-t-b-150">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <img src="./static/img/icon-5.svg" alt="" class="m-b-25">
             <h3>¿Cómo funciona?</h3>
           </div>
-          <div class="col-6">
+          <div class="col-10 offset-1 col-md-6 offset-md-0">
             <div class="position-relative b-l-5-E5E6E7 p-l-50 p-b-50 fa-btn-gris">
               <h6 class="fs-24 fw-600 fc-404041">Contacto</h6>
               <p class="fc-58595B m-0">Empresa vende un producto al cliente final.</p>
@@ -193,16 +194,16 @@
     <section id="footer" class="p-t-b-70">
       <div class="container">
         <div class="row">
-          <div class="col-3 d-flex">
-            <img src="./static/img/logo.svg" alt="">
+          <div class="col-12 m-b-30 col-md-3 d-flex">
+            <a href="./"><img src="./static/img/logo.svg" alt=""></a>
           </div>
-          <div class="col-2">
+          <div class="col-12 m-b-30 col-md-2">
             <ul>
               <li class="active"><a href="#">Sobre iSend</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="#">Nosotros</a></li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-12 m-b-30 col-md-3">
             <ul>
               <li class="active"><a href="#">Servicios</a></li>
               <li><a href="envio-paqueteria.html">Envío de paquetería</a></li>
@@ -210,7 +211,7 @@
               <li><a href="tercerizacion-de-motorizados.html">Tercerización de motorizados</a></li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-12 m-b-30 col-md-3">
             <ul>
               <li class="active"><a href="#">Contáctanos</a></li>
               <li><a href="contacto-empresas.html">Empresas</a></li>

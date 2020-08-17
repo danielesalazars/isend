@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="./static/img/favicon.svg">
     <title>iSend</title>
   </head>
-  <body>
+  <body class="pageNosotros">
     <!-- PREVIEW -->
     <div class="preview d-none">
       <div class="vh-100 d-flex justify-content-center align-items-center">
@@ -31,7 +31,7 @@
     <section id="header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./">
             <img src="./static/img/logo.svg" alt="" class="img-responsive">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Inicio 
+                <a class="nav-link" href="./">Inicio 
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -80,49 +80,75 @@
     <section id="sobrenosotros" class="p-t-b-142">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <h5 class="fw-600 fs-40 text-left">Sobre nosotros<span class="fc-FA4E41">.</span></h5>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <p class="fc-58595B">En Isend nos dedicamos a conectar empresas con mensajeros para envíos inmediatos a través de una moderna plataforma online. </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="servicios" class="p-t-b-142">
+    <section id="servicios" class="p-t-b-142 p-b-0">
       <div class="container">
-        <div class="row p-b-70">
-          <div class="col-5">
-            <img src="./static/img/icon-9.svg" alt="" class="m-b-25">
+        <div class="row">
+          <div class="col-12 col-md-5 p-b-65">
+            <img src="./static/img/icon-16.svg" alt="" class="m-b-25">
             <h4 class="fs-24 fw-600 fc-404041">
-              Altamente capacitados
+              Amplia capacidad de cobertura
             </h4>
-            <p class="fc-58595B">Nuestros motorizados han sido parte de un proceso de reclutamiento y selección especializado para que tus envíos tengan el mejor resultado.</p>
-            <p class="fc-58595B">Además, nos aseguramos  se supervisar el uso del SOAT, brevete y que todos los documentos estén en regla.</p>
+            <p class="fc-58595B">Nuestra cobertura logística es a nivel Lima Metropolitana y Callao.</p>
           </div>
-          <div class="col-5 offset-2">
-            <img src="./static/img/icon-10.svg" alt="" class="m-b-25">
+          <div class="col-12 col-md-5 p-b-65 offset-md-2">
+            <img src="./static/img/icon-17.svg" alt="" class="m-b-25">
             <h4 class="fs-24 fw-600 fc-404041">
-              Disponibilidad y puntualidad
+              Sistema y personal de monitoreo
             </h4>
-            <p class="fc-58595B">Tendrás a nuestro equipo de motorizados a tu disponibilidad para cualquier tipo de entrega. Todo envio será realizado con puntualizad y rapidez.</p>
+            <p class="fc-58595B">Sigue el status de entrega de tu producto, revisa reportes detallados e historial de despachos a través de nuestra web.</p>
           </div>
         </div>
-        <div class="row p-b-70">
-          <div class="col-5">
-            <img src="./static/img/icon-11.svg" alt="" class="m-b-25">
+        <div class="row">
+          <div class="col-12 col-md-5 p-b-65">
+            <img src="./static/img/icon-18.svg" alt="" class="m-b-25">
             <h4 class="fs-24 fw-600 fc-404041">
-              Comprometidos con tus envíos
+              Ponemos a tu disposición a nuestro equipo de motorizados
             </h4>
-            <p class="fc-58595B">En caso de falla mecánica nos encargarémos de solucionar el problema de inmediato. En caso de pérdidas te reembolsamos el 100% del producto. </p>
+            <p class="fc-58595B">Nuestro equipo de motorizados estará para ti el tiempo que lo necesites cumpliendo altos estándares de servicio e imagen.</p>
           </div>
-          <div class="col-5 offset-2">
-            <img src="./static/img/icon-12.svg" alt="" class="m-b-25">
+          <div class="col-12 col-md-5 p-b-65 offset-md-2">
+            <img src="./static/img/icon-19.svg" alt="" class="m-b-25">
             <h4 class="fs-24 fw-600 fc-404041">
-              Sigue tus envíos
+              Sistema automatizado de rutas de entrega
             </h4>
-            <p class="fc-58595B">Podrás darle seguimiento personal al motorizado con tus envíos desde nuestra web.</p>
+            <p class="fc-58595B">Generamos rutas óptimas de entrega a través de nuestro sistema en línea.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="sliderComprometidos">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="SliderSombra"></div>
+          <div class="carousel-item active">
+            <img src="./static/img/comprometidos.jpg" class="d-none d-sm-block w-100" alt="...">
+            <img src="./static/img/mobile/comprometidos.jpg" class="d-sm-none w-100" alt="...">
+            <div class="text-left carousel-caption SliderDescripcion mq">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card p-20">
+                    <div class="card-body h-265 p-l-0 p-r-0">
+                      <h5 class="card-title fc-000000 m-0 p-b-15">Estamos comprometidos con tus entregas</h5>
+                      <p class="fc-2D2D2D p-b-40">Garantizamos total seguridad y confianza al momento de realizar los envíos de tus producto.</p>
+                      <a href="#" class="btn btn-slider">
+                        Escríbenos
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -131,16 +157,16 @@
     <section id="footer" class="p-t-b-70">
       <div class="container">
         <div class="row">
-          <div class="col-3 d-flex">
-            <img src="./static/img/logo.svg" alt="">
+          <div class="col-12 m-b-30 col-md-3 d-flex">
+            <a href="./"><img src="./static/img/logo.svg" alt=""></a>
           </div>
-          <div class="col-2">
+          <div class="col-12 m-b-30 col-md-2">
             <ul>
               <li class="active"><a href="#">Sobre iSend</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="#">Nosotros</a></li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-12 m-b-30 col-md-3">
             <ul>
               <li class="active"><a href="#">Servicios</a></li>
               <li><a href="envio-paqueteria.html">Envío de paquetería</a></li>
@@ -148,7 +174,7 @@
               <li><a href="tercerizacion-de-motorizados.html">Tercerización de motorizados</a></li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-12 m-b-30 col-md-3">
             <ul>
               <li class="active"><a href="#">Contáctanos</a></li>
               <li><a href="contacto-empresas.html">Empresas</a></li>

@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="./static/img/favicon.svg">
     <title>iSend</title>
   </head>
-  <body>
+  <body class="pageTercerizacion">
     <!-- PREVIEW -->
     <div class="preview d-none">
       <div class="vh-100 d-flex justify-content-center align-items-center">
@@ -31,7 +31,7 @@
     <section id="header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./">
             <img src="./static/img/logo.svg" alt="" class="img-responsive">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="servicios.html">
+                <a class="nav-link dropdown-toggle" href="#">
                   Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -76,14 +76,15 @@
         </div>
       </nav>
     </section>
-
+    
     <section id="slider">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="SliderSombra"></div>
           <div class="carousel-item active">
-            <img src="./static/img/slider4.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block SliderDescripcion">
+            <img src="./static/img/slider4.jpg" class="d-none d-sm-block w-100" alt="...">
+            <img src="./static/img/mobile/slider4.jpg" class="d-sm-none w-100" alt="...">
+            <div class="text-left carousel-caption SliderDescripcion mq">
               <small class="fs-400 fw-300 m-b-15">SERVICIOS</small>
               <h5 class="fw-600 fs-40">Tercerización de motorizados</h5>
               <p>Ponemos a su disposición nuestro personal altamente capacitado, en la cantidad que requiera y en el tiempo que necesite, cumpliendo con los más altos estándares de servicio e imagen.</p>
@@ -96,10 +97,10 @@
       </div>
     </section>
 
-    <section id="servicios" class="p-t-b-142">
+    <section id="servicios" class="p-t-b-142 p-b-0">
       <div class="container">
-        <div class="row p-b-70">
-          <div class="col-5">
+        <div class="row">
+          <div class="col-12 col-md-5 p-b-65">
             <img src="./static/img/icon-9.svg" alt="" class="m-b-25">
             <h4 class="fs-24 fw-600 fc-404041">
               Altamente capacitados
@@ -107,7 +108,7 @@
             <p class="fc-58595B">Nuestros motorizados han sido parte de un proceso de reclutamiento y selección especializado para que tus envíos tengan el mejor resultado.</p>
             <p class="fc-58595B">Además, nos aseguramos  se supervisar el uso del SOAT, brevete y que todos los documentos estén en regla.</p>
           </div>
-          <div class="col-5 offset-2">
+          <div class="col-12 col-md-5 p-b-65 offset-md-2">
             <img src="./static/img/icon-10.svg" alt="" class="m-b-25">
             <h4 class="fs-24 fw-600 fc-404041">
               Disponibilidad y puntualidad
@@ -115,15 +116,15 @@
             <p class="fc-58595B">Tendrás a nuestro equipo de motorizados a tu disponibilidad para cualquier tipo de entrega. Todo envio será realizado con puntualizad y rapidez.</p>
           </div>
         </div>
-        <div class="row p-b-70">
-          <div class="col-5">
+        <div class="row">
+          <div class="col-12 col-md-5 p-b-65">
             <img src="./static/img/icon-11.svg" alt="" class="m-b-25">
             <h4 class="fs-24 fw-600 fc-404041">
               Comprometidos con tus envíos
             </h4>
             <p class="fc-58595B">En caso de falla mecánica nos encargarémos de solucionar el problema de inmediato. En caso de pérdidas te reembolsamos el 100% del producto. </p>
           </div>
-          <div class="col-5 offset-2">
+          <div class="col-12  p-b-65 col-md-5 offset-md-2">
             <img src="./static/img/icon-12.svg" alt="" class="m-b-25">
             <h4 class="fs-24 fw-600 fc-404041">
               Sigue tus envíos
@@ -133,20 +134,20 @@
         </div>
       </div>
     </section>
-
+    
     <section id="footer" class="p-t-b-70">
       <div class="container">
         <div class="row">
-          <div class="col-3 d-flex">
-            <img src="./static/img/logo.svg" alt="">
+          <div class="col-12 m-b-30 col-md-3 d-flex">
+            <a href="./"><img src="./static/img/logo.svg" alt=""></a>
           </div>
-          <div class="col-2">
+          <div class="col-12 m-b-30 col-md-2">
             <ul>
               <li class="active"><a href="#">Sobre iSend</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="#">Nosotros</a></li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-12 m-b-30 col-md-3">
             <ul>
               <li class="active"><a href="#">Servicios</a></li>
               <li><a href="envio-paqueteria.html">Envío de paquetería</a></li>
@@ -154,7 +155,7 @@
               <li><a href="tercerizacion-de-motorizados.html">Tercerización de motorizados</a></li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-12 m-b-30 col-md-3">
             <ul>
               <li class="active"><a href="#">Contáctanos</a></li>
               <li><a href="contacto-empresas.html">Empresas</a></li>

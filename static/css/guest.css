@@ -28,6 +28,10 @@ a{ text-decoration: none !important; outline: none !important; }
   background-color: #FF5858;
 }
 /* navegacion */
+#slider .mq,
+#sliderComprometidos .mq{ 
+  text-align: center !important; 
+}
 #header ul li a{
   padding: 0 25px;
 }
@@ -83,7 +87,7 @@ a{ text-decoration: none !important; outline: none !important; }
   border-radius: 25px;
   color: white !important;
   margin-top: 15px;
-  padding: 10px 50px;
+  padding: 10px 40px;
 }
 /* background */
 .bc-white{ background-color: #fff; }
@@ -96,6 +100,7 @@ a{ text-decoration: none !important; outline: none !important; }
 .fc-404041{ color: #404041; }
 .fc-58595B{ color: #58595B; }
 .fc-000000{ color: #000000; }
+.fc-2D2D2D{ color: #2D2D2D; }
 /* weight */
 .fw-100{ font-weight: 100; }
 .fw-300{ font-weight: 300; }
@@ -108,10 +113,13 @@ a{ text-decoration: none !important; outline: none !important; }
 /* size */
 .fs-14{ font-size: 14px; }
 .fs-24{ font-size: 24px; }
+.fs-32{ font-size: 32px; }
 .fs-40{ font-size: 40px; }
 /* padding y margin */
 .m-b-15{ margin-bottom: 15px; }
+.m-b-20{ margin-bottom: 20px; }
 .m-b-25{ margin-bottom: 25px; }
+.m-b-30{ margin-bottom: 30px; }
 .p-t-b-28{ padding: 28px 0; }
 .p-t-b-30{ padding: 30px 0; }
 .p-t-b-50{ padding: 50px 0; }
@@ -120,17 +128,25 @@ a{ text-decoration: none !important; outline: none !important; }
 .p-t-b-142{ padding: 142px 0; }
 .p-t-b-150{ padding: 150px 0; }
 .p-20{ padding: 20px; }
+.p-l-0{ padding-left: 0px; }
 .p-l-50{ padding-left: 50px; }
+.p-r-0{ padding-right: 0px; }
+.p-b-0{ padding-bottom: 0; }
+.p-b-15{ padding-bottom: 15px; }
 .p-b-40{ padding-bottom: 40px; }
 .p-b-50{ padding-bottom: 50px; }
+.p-b-65{ padding-bottom: 65px; }
 .p-b-70{ padding-bottom: 70px; }
 .p-b-150{ padding-bottom: 150px; }
+.p-t-30{ padding-top: 30px; }
 /* border */
 .b-l-5-E5E6E7{ border-left: 5px solid #E5E6E7; }
 .b-l-5-FFFFFF{ border-left: 5px solid #FFFFFF; }
 /* height */
 .h-250{ height: 250px; }
+.h-265{ height: 265px; }
 .h-420{ height: 420px; }
+/* inicio */
 /* servicios */
 .card-sombra{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
@@ -201,7 +217,61 @@ a{ text-decoration: none !important; outline: none !important; }
   justify-content: center;
   height: 380px;
 }
+/* media querie */
+@media (max-width: 360px){
+  .fs-32{ font-size: 24px; }
+  .fs-40{ font-size: 24px; }
+  .p-t-b-142{ padding: 71px 0; }
+  .p-t-b-150{ padding: 75px 0; }
+  .p-b-150{ padding-bottom: 75px; }
+  /* inicio */
+  .card-servicios-home .mq{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  #slider .mq h5{
+    line-height: 33px;
+  }
+  .card-servicios-home .mq p{
+    font-weight: 400;
+    padding-left: 10px;
+    width: 100%;
+  }
+  .pageInicio .fs-24{ font-size: 16px; }
+  .pageInicio #slider .mq{ padding:0; margin-top: -145px; }
+  /* paqueteria */
+  .pagePaqueteria #slider .mq{ padding:0; margin-top: -120px; }
+  /* verificaciones */
+  .pageVerificaciones #slider .mq{ padding:0; margin-top: -125px; }
+  #queOfrecemos .mq{ margin-top: 20px; }
+  #queOfrecemos .mq .col-12{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #queOfrecemos .mq .col-12 img{
+    margin: 0;
+    padding-right: 25px;
+  }
+  /* tercerizacion */
+  .pageTercerizacion #slider .mq{ padding:0; margin-top: -133px; width: 100%; left: 0; }
+  /* nosotros */
+  .pageNosotros #sliderComprometidos .mq{ 
+    padding:0; 
+    margin-top: -133px; 
+    left: 5% !important; 
+    right: 5%; 
+  }
+  .pageNosotros #sliderComprometidos .mq .p-b-40{ 
+    padding-bottom: 0px;
+    margin: 0;
+  }
+  .pageNosotros #sliderComprometidos .mq .h-265{
+    height: 240px;
+  }
 
+}
 
 
 
