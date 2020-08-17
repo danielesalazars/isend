@@ -1,0 +1,223 @@
+/* General */
+body{
+  background-color: #FFFFFF;
+  color: #404041;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;/* normal*/
+}
+a{ text-decoration: none !important; outline: none !important; }
+/* BOOTSTRAP Customize */
+.btn-outline-danger{
+  color: #FA4E41;
+  border-color: #FA4E41;
+}
+.btn-outline-danger:hover,
+.btn-outline-danger:active{
+  background-color: #FA4E41;
+  border-color: #FA4E41;
+}
+.btn-vermas{
+  background-color: #fff;
+  border-radius: 25px;
+  color: #FA4E41 !important;
+  padding: 10px 100px;
+}
+/* preview */
+.preview{
+  background-color: #FF5858;
+}
+/* navegacion */
+#header ul li a{
+  padding: 0 25px;
+}
+#header ul li:hover > a,
+#header ul li.active > a,
+#header ul li .dropdown-menu a:hover,
+#header ul li .dropdown-menu a:active{
+  background-color: #fff;
+  color: #FA4E41;
+  /*font-weight: 600;*/
+} 
+#header ul li .dropdown-menu{
+  padding: 15px 0!important;
+}
+#header ul li .dropdown-menu a{
+  padding: 15px 30px;
+}
+#header ul li.dropdown > a:after{/* sin darle clic */
+  border: 0;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: 0;
+}
+#header ul li.dropdown.show > a:after{/* al darle clic */
+  content: "\f077";
+}
+.btnIniciarSesion{
+  border-radius: 25px;
+  padding: 8px 30px;
+}
+.SliderSombra{
+  background: url(../img/slider-sombra.png) no-repeat;
+  background-size: cover;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.SliderDescripcion{
+  top: 50%;
+  margin-top: -100px;
+}
+.SliderForm{
+  bottom: 0;
+  margin-top: -210px;
+  padding: 0;
+}
+.btn-slider{
+  background-color: #FA4E41 !important;
+  border-radius: 25px;
+  color: white !important;
+  margin-top: 15px;
+  padding: 10px 50px;
+}
+/* background */
+.bc-white{ background-color: #fff; }
+.bc-FA4E41{ background-color: #FA4E41; }
+.bc-FF5858{ background-color: #FF5858; }
+.bc-404041{ background-color: #404041; }
+/* colores */
+.fc-FA4E41{ color: #FA4E41; }
+.fc-FF5858{ color: #FF5858; }
+.fc-404041{ color: #404041; }
+.fc-58595B{ color: #58595B; }
+.fc-000000{ color: #000000; }
+/* weight */
+.fw-100{ font-weight: 100; }
+.fw-300{ font-weight: 300; }
+.fw-400{ font-weight: 400; }
+.fw-500{ font-weight: 500; }
+.fw-600{ font-weight: 600; }
+.fw-700{ font-weight: 700; }
+.fw-800{ font-weight: 800; }
+.fw-900{ font-weight: 900; }
+/* size */
+.fs-14{ font-size: 14px; }
+.fs-24{ font-size: 24px; }
+.fs-40{ font-size: 40px; }
+/* padding y margin */
+.m-b-15{ margin-bottom: 15px; }
+.m-b-25{ margin-bottom: 25px; }
+.p-t-b-28{ padding: 28px 0; }
+.p-t-b-30{ padding: 30px 0; }
+.p-t-b-50{ padding: 50px 0; }
+.p-t-b-70{ padding: 70px 0; }
+.p-t-b-80{ padding: 80px 0; }
+.p-t-b-142{ padding: 142px 0; }
+.p-t-b-150{ padding: 150px 0; }
+.p-20{ padding: 20px; }
+.p-l-50{ padding-left: 50px; }
+.p-b-40{ padding-bottom: 40px; }
+.p-b-50{ padding-bottom: 50px; }
+.p-b-70{ padding-bottom: 70px; }
+.p-b-150{ padding-bottom: 150px; }
+/* border */
+.b-l-5-E5E6E7{ border-left: 5px solid #E5E6E7; }
+.b-l-5-FFFFFF{ border-left: 5px solid #FFFFFF; }
+/* height */
+.h-250{ height: 250px; }
+.h-420{ height: 420px; }
+/* servicios */
+.card-sombra{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.card-servicios-home .card-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-servicios-home ul li{
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+}
+.card-servicios-home:hover ul{
+  display: block !important;
+}
+/* footer */
+#footer{ border: 1px solid #E5E6E7; }
+#footer ul{ padding: 0; margin: 0;}
+#footer ul li{ 
+  list-style: none; 
+  font-size: 14px; 
+  padding-bottom: 20px;
+}
+#footer ul li:last-child{ 
+  padding-bottom: 0;
+}
+#footer ul li a{ color: #000;}
+#footer ul li.active a,
+#footer ul li a:active,
+#footer ul li a:hover{ 
+  font-weight: 600;
+}
+/* como funciona */
+.fa-btn-gris:after,
+.fa-btn-warning:after,
+.fa-btn-success:after{
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  left: -19px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+.fa-btn-gris:after{
+  border: 6px solid #C4C4C4;
+}
+.fa-btn-warning:after{
+  border: 6px solid #FFAE35;
+}
+.fa-btn-success:after{
+  border: 6px solid #6EC37C;
+}
+/* servicios motorizado */
+#servicios-motorizado .card-body{
+  padding: 30px 1.25rem;
+}
+/* sobre nosotros */
+#sobrenosotros{ border-bottom: 1px solid #E5E6E7; }
+/* gracias */
+.gracias{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

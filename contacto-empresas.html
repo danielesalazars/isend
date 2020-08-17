@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="./static/lib/fontawesome_5/css/all.min.css">
+    <!-- Fonts Google --> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS CUSTOMIZE -->
+    <link rel="stylesheet" type="text/css" href="static/css/guest.css">
+    <link rel="icon" type="image/png" href="./static/img/favicon.svg">
+    <title>iSend</title>
+  </head>
+  <body>
+    <!-- PREVIEW -->
+    <div class="preview d-none">
+      <div class="vh-100 d-flex justify-content-center align-items-center">
+        <a href=""></a>
+        <h1 class="text-white">iSend</h1>
+      </div>
+    </div>
+    <!-- END PREVIEW -->
+
+    <!-- PAGINA INICIO -->
+    <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./static/img/logo.svg" alt="" class="img-responsive">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./">Inicio 
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="servicios.html">
+                  Servicios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="envio-paqueteria.html">Envio de paquetería</a>
+                  <a class="dropdown-item" href="verificaciones-domiciliarias.html">Verificaciones domiciliarias</a>
+                  <a class="dropdown-item" href="tercerizacion-de-motorizados.html">Tercerización de motorizados</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">
+                  Escríbenos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="contacto-motorizados.html">Mensajeros</a>
+                  <a class="dropdown-item" href="contacto-empresas.html">Empresas</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="btn btn-outline-danger my-2 my-sm-0 btnIniciarSesion" type="submit">
+                Iniciar Sesión
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="slider">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="SliderSombra"></div>
+          <div class="carousel-item active">
+            <img src="./static/img/slider5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block SliderDescripcion SliderForm">
+              <div class="row">
+                <div class="col-6">
+                  <h5 class="fw-600 fs-40 text-left">Tenemos la solución para esa entrega que necesitas realizar</h5>
+                </div>
+                <div class="col-6">
+                  <div class="cardContactoEmpresa card p-20">
+                    <div class="card-body h-420">
+                      <form id="contactoEmpresa" action="#" class="">
+                        <h5 class="card-title fc-000000 m-0 p-b-40">Empieza mandándonos un mensaje</h5>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Nombre y apellido">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" placeholder="correo">
+                        </div>
+                        <div class="form-group">
+                          <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="form-group m-0">
+                          <input type="subtmit" value="¡Enviar!" class="btn btn-slider">
+                        </div>
+                      </form>
+                      <div class="gracias text-center d-none">
+                        <img src="./static/img/icon-13.svg" alt="" class="m-b-25">
+                        <h4 class="m-b-25 fw-600 fs-24 fc-404041">¡Gracias por ponerte en contacto con nosotros!</h4>
+                        <p class="fc-58595B">Pronto responderemos a tu solicitud. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="p-t-b-142">
+      <div class="container">
+        <div class="row p-b-150">
+          <div class="col-5 d-flex justify-content-center flex-column">
+            <h4 class="fs-24 fw-600 fc-404041">
+              Cuéntanos a dónde ir y ahí estaremos
+            </h4>
+            <p class="fc-58595B">Puedes enviar un documento, un regalo, un pedido y más. </p>
+          </div>
+          <div class="col-5 offset-1 offset-right-1">
+            <a href="#" class="card card-sombra">
+              <img src="./static/img/contacto-empresas-1.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="row p-b-150">
+          <div class="col-5">
+            <a href="#" class="card card-sombra">
+              <img src="./static/img/contacto-empresas-2.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+          <div class="col-5 offset-1 offset-right-1 d-flex justify-content-center flex-column">
+            <h4 class="fs-24 fw-600 fc-404041">
+              Te avisaremos cuando tu producto haya sido enviado
+            </h4>
+            <p class="fc-58595B">Podrás darle seguimiento  y ver el estado de la  entrega de tus productos desde nuestra web.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5 d-flex justify-content-center flex-column">
+            <h4 class="fs-24 fw-600 fc-404041">
+              ¿No se pudo realizar la entrega? No hay ningún problema
+            </h4>
+            <p class="fc-58595B">Volveremos a intentar realizar la entrega de tu producto hasta un máximo de dos intentos sin ningún costo adicional. </p>
+          </div>
+          <div class="col-5 offset-1 offset-right-1">
+            <a href="#" class="card card-sombra">
+              <img src="./static/img/contacto-empresas-3.jpg" class="card-img-top" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="atencionPersonalizada" class="bc-FA4E41 p-t-b-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-center text-white m-b-15">¿Aún con dudas? Conoce más sobre nosotros</h3>
+          </div>
+          <div class="col-12 text-center">
+            <a href="#" class="btn btn-vermas">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="p-t-b-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 d-flex">
+            <img src="./static/img/logo.svg" alt="">
+          </div>
+          <div class="col-2">
+            <ul>
+              <li class="active"><a href="#">Sobre iSend</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li class="active"><a href="#">Servicios</a></li>
+              <li><a href="envio-paqueteria.html">Envío de paquetería</a></li>
+              <li><a href="verificaciones-domiciliarias.html">Verificaciones domiciliarias</a></li>
+              <li><a href="tercerizacion-de-motorizados.html">Tercerización de motorizados</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li class="active"><a href="#">Contáctanos</a></li>
+              <li><a href="contacto-empresas.html">Empresas</a></li>
+              <li><a href="contacto-motorizados.html">Mensajeros</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END PAGINA INICIO -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./static/js/guest.js"></script>
+  </body>
+</html>
