@@ -48,7 +48,7 @@
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="servicios.html">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,7 +58,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Escríbenos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -81,7 +81,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">
-            <h5 class="fw-600 fs-40 text-left">Sobre nosotros<span class="fc-FA4E41">.</span></h5>
+            <h5 class="fw-600 fs-40i text-left m-b-25">Sobre nosotros<span class="fc-FA4E41">.</span></h5>
           </div>
           <div class="col-12 col-md-6">
             <p class="fc-58595B">En Isend nos dedicamos a conectar empresas con mensajeros para envíos inmediatos a través de una moderna plataforma online. </p>
@@ -90,58 +90,59 @@
       </div>
     </section>
 
-    <section id="servicios" class="p-t-b-142 p-b-0">
+    <section id="serviciosNosotros" class="p-t-b-142 p-b-0">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-5 p-b-65">
             <img src="./static/img/icon-16.svg" alt="" class="m-b-25">
-            <h4 class="fs-24 fw-600 fc-404041">
+            <h4 class="fs-24 fw-600 fc-404041 m-b-15">
               Amplia capacidad de cobertura
             </h4>
-            <p class="fc-58595B">Nuestra cobertura logística es a nivel Lima Metropolitana y Callao.</p>
+            <p class="fc-58595B m-0">Nuestra cobertura logística es a nivel Lima Metropolitana y Callao.</p>
           </div>
           <div class="col-12 col-md-5 p-b-65 offset-md-2">
             <img src="./static/img/icon-17.svg" alt="" class="m-b-25">
-            <h4 class="fs-24 fw-600 fc-404041">
+            <h4 class="fs-24 fw-600 fc-404041 m-b-15">
               Sistema y personal de monitoreo
             </h4>
-            <p class="fc-58595B">Sigue el status de entrega de tu producto, revisa reportes detallados e historial de despachos a través de nuestra web.</p>
+            <p class="fc-58595B m-0">Sigue el status de entrega de tu producto, revisa reportes detallados e historial de despachos a través de nuestra web.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-5 p-b-65">
             <img src="./static/img/icon-18.svg" alt="" class="m-b-25">
-            <h4 class="fs-24 fw-600 fc-404041">
+            <h4 class="fs-24 fw-600 fc-404041 m-b-15">
               Ponemos a tu disposición a nuestro equipo de motorizados
             </h4>
-            <p class="fc-58595B">Nuestro equipo de motorizados estará para ti el tiempo que lo necesites cumpliendo altos estándares de servicio e imagen.</p>
+            <p class="fc-58595B m-0">Nuestro equipo de motorizados estará para ti el tiempo que lo necesites cumpliendo altos estándares de servicio e imagen.</p>
           </div>
           <div class="col-12 col-md-5 p-b-65 offset-md-2">
             <img src="./static/img/icon-19.svg" alt="" class="m-b-25">
-            <h4 class="fs-24 fw-600 fc-404041">
+            <h4 class="fs-24 fw-600 fc-404041 m-b-15">
               Sistema automatizado de rutas de entrega
             </h4>
-            <p class="fc-58595B">Generamos rutas óptimas de entrega a través de nuestro sistema en línea.</p>
+            <p class="fc-58595B m-0">Generamos rutas óptimas de entrega a través de nuestro sistema en línea.</p>
           </div>
         </div>
       </div>
     </section>
     
     <section id="sliderComprometidos">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="SliderSombra"></div>
-          <div class="carousel-item active">
-            <img src="./static/img/comprometidos.jpg" class="d-none d-sm-block w-100" alt="...">
-            <img src="./static/img/mobile/comprometidos.jpg" class="d-sm-none w-100" alt="...">
+          <div class="carousel-item active">            
+            <picture>
+              <source media="(max-width: 414px)" srcset="./static/img/mobile/comprometidos.jpg">
+              <img src="./static/img/comprometidos.jpg" class="w-100">
+            </picture>
             <div class="text-left carousel-caption SliderDescripcion mq">
               <div class="row">
                 <div class="col-12">
-                  <div class="card p-20">
-                    <div class="card-body h-265 p-l-0 p-r-0">
-                      <h5 class="card-title fc-000000 m-0 p-b-15">Estamos comprometidos con tus entregas</h5>
-                      <p class="fc-2D2D2D p-b-40">Garantizamos total seguridad y confianza al momento de realizar los envíos de tus producto.</p>
-                      <a href="#" class="btn btn-slider">
+                  <div class="card p-t-b-80">
+                    <div class="card-body p-t-0 p-b-0">
+                      <h5 class="card-title fs-32 fw-600 fc-000000 m-0 p-b-15">Estamos comprometidos con tus entregas</h5>
+                      <p class="fc-2D2D2D m-0 p-b-50">Garantizamos total seguridad y confianza al momento de realizar los envíos de tus producto.</p>
+                      <a href="#" class="btn btn-slider m-0">
                         Escríbenos
                       </a>
                     </div>

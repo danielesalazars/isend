@@ -48,7 +48,7 @@
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="servicios.html">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,7 +58,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Escríbenos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -81,8 +81,11 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="SliderSombra"></div>
-          <div class="carousel-item active">
-            <img src="./static/img/slider5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item active">            
+            <picture>
+              <!--<source media="(max-width: 414px)" srcset="./static/img/mobile/slider5.jpg">-->
+              <img src="./static/img/slider5.jpg" class="d-none d-md-block w-100">
+            </picture>
             <div class="carousel-caption d-none d-md-block SliderDescripcion SliderForm">
               <div class="row">
                 <div class="col-6">

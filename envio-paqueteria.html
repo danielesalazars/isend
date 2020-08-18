@@ -48,7 +48,7 @@
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,7 +58,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Escríbenos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -82,8 +82,10 @@
         <div class="carousel-inner">
           <div class="SliderSombra"></div>
           <div class="carousel-item active">
-            <img src="./static/img/slider1.png" class="d-none d-sm-block w-100" alt="...">
-            <img src="./static/img/mobile/slider2.jpg" class="d-sm-none w-100" alt="...">
+            <picture>
+              <source media="(max-width: 414px)" srcset="./static/img/mobile/slider2.jpg">
+              <img src="./static/img/slider2.png" class="w-100">
+            </picture>
             <div class="text-left carousel-caption SliderDescripcion mq">
               <small class="fs-400 fw-300 m-b-15">SERVICIOS</small>
               <h5 class="fw-600 fs-40">Envío de paquetería</h5>
@@ -145,7 +147,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3 class="text-center text-white m-b-15">Atención personalizada</h3>
+            <h3 class="fs-32 text-center text-white m-b-15">Atención personalizada</h3>
           </div>
           <div class="col-12 col-md-6 offset-md-3">
             <p class="m-0 text-white text-center">Todos nuestros clientes cuentan con un gestor post venta con el que podrán confirmar la entrega de sus envíos de manera inmediata.</p>
@@ -159,7 +161,7 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <img src="./static/img/icon-5.svg" alt="" class="m-b-25">
-            <h3>¿Cómo funciona?</h3>
+            <h3 class="fs-32 m-0 p-b-50">¿Cómo funciona?</h3>
           </div>
           <div class="col-10 offset-1 col-md-6 offset-md-0">
             <div class="position-relative b-l-5-E5E6E7 p-l-50 p-b-50 fa-btn-gris">

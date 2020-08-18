@@ -45,7 +45,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,8 +82,12 @@
         <div class="carousel-inner">
           <div class="SliderSombra"></div>
           <div class="carousel-item active">
-            <img src="./static/img/slider1.png" class="d-none d-sm-block w-100" alt="...">
-            <img src="./static/img/mobile/slider1.jpg" class="d-sm-none w-100" alt="...">
+            <!-- <img src="./static/img/slider1.png" class="d-none d-sm-block w-100" alt="...">
+            <img src="./static/img/mobile/slider1.jpg" class="d-sm-none w-100" alt="..."> -->
+            <picture>
+              <source media="(max-width: 414px)" srcset="./static/img/mobile/slider1.jpg">
+              <img src="./static/img/slider1.png" class="w-100">
+            </picture>
             <div class="text-left carousel-caption SliderDescripcion mq">
               <h5 class="fw-600 fs-40"><span class="fc-FA4E41">Conectamos tu empresa</span> con <br>mensajeros para envíos inmediatos</h5>
               <p>Nuestra moderna plataforma online aseguran una entrega 100% confiable y rápida.</p>
@@ -202,7 +206,7 @@
               <div class="card-body fw-600 text-center">
                 <img src="./static/img/icon-repartidor.svg" alt="" class="m-b-25">
                 <h4 class="fs-24 fc-404041 m-b-15">Conviértete en repartidor</h4>
-                <p class="card-text fw-400 m-b-25">
+                <p class="card-description fw-400 m-b-25">
                   ¿Estás listo para ser parte de nuestro equipo altamente calificado?
                 </p>
                 <p class="card-text fc-FF5858">
@@ -219,7 +223,7 @@
               <div class="card-body fw-600 text-center">
                 <img src="./static/img/icon-envio.svg" alt="" class="m-b-25">
                 <h4 class="fs-24 fc-404041 m-b-15">Quiero enviar mis productos</h4>
-                <p class="card-text fw-400 m-b-25">
+                <p class="card-description fw-400 m-b-25">
                   ¿Eres una empresa que necesita que sus clientes reciban sus productos?
                 </p>
                 <p class="card-text fc-FF5858">
@@ -244,7 +248,7 @@
           <div class="col-12 m-b-30 col-md-2">
             <ul>
               <li class="active"><a href="#">Sobre iSend</a></li>
-              <li><a href="#">Nosotros</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
           </div>
           <div class="col-12 m-b-30 col-md-3">
