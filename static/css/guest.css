@@ -6,7 +6,7 @@ body{
   font-size: 16px;
   font-weight: 400;/* normal*/
 }
-a{ text-decoration: none !important; outline: none !important; }
+a, button{ text-decoration: none !important; outline: none !important; }
 /* BOOTSTRAP Customize */
 .btn-outline-danger{
   color: #FA4E41;
@@ -49,14 +49,16 @@ a{ text-decoration: none !important; outline: none !important; }
 #header ul li .dropdown-menu a{
   padding: 15px 30px;
 }
-#header ul li.dropdown > a:after{/* sin darle clic */
+#header ul li.dropdown > a:after,
+#menuFloat ul li.dropdown > a:after{/* sin darle clic */
   border: 0;
   content: "\f078";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   vertical-align: 0;
 }
-#header ul li.dropdown.show > a:after{/* al darle clic */
+#header ul li.dropdown.show > a:after,
+#menuFloat ul li.dropdown.show > a:after{/* al darle clic */
   content: "\f077";
 }
 .btnIniciarSesion{
@@ -121,6 +123,7 @@ a{ text-decoration: none !important; outline: none !important; }
 .m-b-20{ margin-bottom: 20px; }
 .m-b-25{ margin-bottom: 25px; }
 .m-b-30{ margin-bottom: 30px; }
+.p-t-b-25{ padding: 25px 0; }
 .p-t-b-28{ padding: 28px 0; }
 .p-t-b-30{ padding: 30px 0; }
 .p-t-b-50{ padding: 50px 0; }
@@ -145,6 +148,7 @@ a{ text-decoration: none !important; outline: none !important; }
 /* border */
 .b-l-5-E5E6E7{ border-left: 5px solid #E5E6E7; }
 .b-l-5-FFFFFF{ border-left: 5px solid #FFFFFF; }
+.b-b-1-E5E6E7{ border-bottom: 1px solid #E5E6E7; }
 /* height */
 .h-250{ height: 250px; }
 .h-265{ height: 265px; }
@@ -234,6 +238,97 @@ a{ text-decoration: none !important; outline: none !important; }
   .p-t-b-142{ padding: 71px 0; }
   .p-t-b-150{ padding: 75px 0; }
   .p-b-150{ padding-bottom: 75px; }
+  .pageInicio .fs-24,
+  .pagePaqueteria #comoFunciona .fs-24,
+  .pageEmpresas #slider .card-title,
+  .pageMotorizados #slider .card-title{
+    font-size: 16px; 
+    font-weight: 600; 
+  }
+  #queOfrecemos img,
+  #partedeNosotros img,
+  #serviciosNosotros img{ 
+    height: 40px; 
+  }
+  #queOfrecemos p,
+  #partedeNosotros .card-description,
+  #atencionPersonalizada p{
+    font-size: 14px; 
+  }
+  /* header */
+  #header .navbar-collapse{ display: none; }
+  #menuFloat{
+    background: rgba(64, 64, 65, 0.6);
+    z-index: 15;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0;    
+    transition: all 0.5s ease-in-out; 
+  }
+  #menuFloat.active{
+    left: 0%;
+  }
+
+  #menuFloat .contenedor{
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin-left: 100%;
+    width: 85%;
+    z-index: 15;
+    transition: all 0.5s ease-in-out; 
+  }
+  #menuFloat .contenedor.active{
+    margin-left: 15%;
+  }
+  #menuFloat ul li {
+    padding-bottom: 30px;
+  }
+  #menuFloat ul li > a{
+    color: #404041;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0;
+  }
+  #menuFloat ul li .dropdown-menu{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    top: 35px !important;
+    transform: translate3d(0px, 18px, 0px) !important;
+  }
+  #menuFloat ul li.dropdown > a:after{
+    float: right;
+  }
+  #menuFloat ul li.dropdown{
+    height: 66px;
+    transition: height 1s ease-out;
+  }
+  #menuFloat ul li.dropdown.show{
+    overflow: hidden;
+  }
+  #menuFloat ul li#floatServicios.show{
+    height: 205px;
+  }
+  #menuFloat ul li#floatEscribenos.show{
+    height: 155px;
+  }
+  #menuFloat ul li .dropdown-menu a{
+    color: #686868;
+    font-size: 16px;
+    padding: 0 0 25px 0;
+  }
+  #menuFloat ul li .dropdown-menu a:last-child{
+    padding: 0;
+  }
+  #menuFloat .btnIniciarSesion{
+    width: 100%;
+  }
   /* inicio */
   .card-servicios-home .mq{
     align-items: center;
@@ -248,26 +343,11 @@ a{ text-decoration: none !important; outline: none !important; }
     padding-left: 10px;
     width: 100%;
   }
-  .pageInicio .fs-24,
-  .pagePaqueteria #comoFunciona .fs-24{
-    font-size: 16px; 
-    font-weight: 600; 
-  }
   .pageInicio #slider .mq{ 
     padding:0; 
     margin-top: -145px; 
     left: 10%;
     right: 10%;
-  }
-  #queOfrecemos img,
-  #partedeNosotros img,
-  #serviciosNosotros img{ 
-    height: 40px; 
-  }
-  #queOfrecemos p,
-  #partedeNosotros .card-description,
-  #atencionPersonalizada p{
-    font-size: 14px; 
   }
   /* paqueteria */
   #atencionPersonalizada p{ font-weight: 300; }
@@ -312,7 +392,41 @@ a{ text-decoration: none !important; outline: none !important; }
   .pageNosotros #sliderComprometidos .mq .h-265{
     height: 240px;
   }
-
+  /* empresa y motorizados*/
+  .pageEmpresas .SliderSombra,
+  .pageMotorizados .SliderSombra{ 
+    display: none; 
+  }
+  .pageEmpresas .SliderForm,
+  .pageMotorizados .SliderForm{
+    position: relative;
+    margin: 0 15px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .pageEmpresas .title,
+  .pageMotorizados .title{ 
+    color: #FA4E41; 
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  .pageEmpresas .card,
+  .pageMotorizados .card{ 
+    border: 0;
+    padding: 0;
+  }
+  .pageEmpresas .card-title,
+  .pageMotorizados .card-title{ 
+    text-align: left;
+    padding-bottom: 25px;
+  }
+  .pageEmpresas .card-body,
+  .pageMotorizados .card-body{ 
+    padding: 0;
+    height: auto;
+  }
 }
 
 
