@@ -29,7 +29,7 @@
 
     <!-- PAGINA INICIO -->
     <section id="header">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bc-white">
         <div class="container">
           <a class="navbar-brand" href="./">
             <img src="./static/img/logo.svg" alt="" class="img-responsive">
@@ -37,7 +37,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse d-lg-block d-md-none" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="./">Inicio 
@@ -68,9 +68,9 @@
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-              <button class="btn btn-outline-danger my-2 my-sm-0 btnIniciarSesion" type="submit">
-                Iniciar Sesión
-              </button>
+              <a href="backoffice-login.html" class="btn btn-outline-danger my-2 my-sm-0 btnIniciarSesion" type="submit">
+                Iniciar sesión
+              </a>
             </form>
           </div>
         </div>
@@ -123,14 +123,14 @@
                   </div>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-danger my-2 my-sm-0 btnIniciarSesion" type="submit">
-                  Iniciar Sesión
-                </button>
-              </form>
             </div>
           </div>
-        </div>
+        </div>        
+        <form class="btnIniciarFloat form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-danger my-2 my-sm-0 btnIniciarSesion" type="submit">
+            Iniciar sesión
+          </button>
+        </form>
       </div>
     </section> 
 
@@ -199,7 +199,9 @@
               <img src="./static/img/envio-paqueteria.jpg" class="card-img-top d-none d-md-block" alt="...">
               <div class="card-body fw-600 mq">
                 <small class="fs-14 fc-FF5858">01.</small>
-                <p class="card-text fs-24 fc-404041">Envío de Paquetería
+                <p class="card-text fs-24 fc-404041">
+                  <span class="d-none d-sm-block">Envío de <br>Paquetería</span>
+                  <span class="d-sm-none">Envío de Paquetería</span>
                   <span>
                     <i class="fas fa-chevron-right fc-FF5858"></i>
                   </span>
@@ -217,7 +219,8 @@
               <img src="./static/img/verificaciones-domiciliarias.jpg" class="card-img-top d-none d-md-block" alt="...">
               <div class="card-body fw-600 mq">
                 <small class="fs-14 fc-FF5858">02.</small>
-                <p class="card-text fs-24 fc-404041">Verificaciones domiciliarias
+                <p class="card-text fs-24 fc-404041">
+                  <span>Verificaciones domiciliarias</span>
                   <span>
                     <i class="fas fa-chevron-right fc-FF5858"></i>
                   </span>
@@ -235,7 +238,8 @@
               <img src="./static/img/tercerizacion-motorizados.jpg" class="card-img-top d-none d-md-block" alt="...">
               <div class="card-body fw-600 mq">
                 <small class="fs-14 fc-FF5858">03.</small>
-                <p class="card-text fs-24 fc-404041">Tercerización de motorizados
+                <p class="card-text fs-24 fc-404041">
+                  <span>Tercerización de motorizados</span>
                   <span>
                     <i class="fas fa-chevron-right fc-FF5858"></i>
                   </span>
@@ -304,13 +308,13 @@
           </div>
           <div class="col-12 m-b-30 col-md-2">
             <ul>
-              <li class="active"><a href="#">Sobre iSend</a></li>
+              <li class="active">Sobre iSend</li>
               <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
           </div>
           <div class="col-12 m-b-30 col-md-3">
             <ul>
-              <li class="active"><a href="#">Servicios</a></li>
+              <li class="active">Servicios</li>
               <li><a href="envio-paqueteria.html">Envío de paquetería</a></li>
               <li><a href="verificaciones-domiciliarias.html">Verificaciones domiciliarias</a></li>
               <li><a href="tercerizacion-de-motorizados.html">Tercerización de motorizados</a></li>
@@ -318,7 +322,7 @@
           </div>
           <div class="col-12 m-b-30 col-md-3">
             <ul>
-              <li class="active"><a href="#">Contáctanos</a></li>
+              <li class="active">Contáctanos</li>
               <li><a href="contacto-empresas.html">Empresas</a></li>
               <li><a href="contacto-motorizados.html">Mensajeros</a></li>
             </ul>

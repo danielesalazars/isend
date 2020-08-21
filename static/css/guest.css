@@ -7,6 +7,7 @@ body{
   font-weight: 400;/* normal*/
 }
 a, button{ text-decoration: none !important; outline: none !important; }
+.o-f-c{ object-fit: cover; }
 /* BOOTSTRAP Customize */
 .btn-outline-danger{
   color: #FA4E41;
@@ -28,12 +29,15 @@ a, button{ text-decoration: none !important; outline: none !important; }
   background-color: #FF5858;
 }
 /* navegacion */
-#slider .mq,
-#sliderComprometidos .mq{ 
-  text-align: center !important; 
+#header{
+  background-color: #fff;
+  height: 95px;
+  z-index: 9;
+  line-height: 70px;
 }
-#header ul li a{
-  padding: 0 25px;
+#header ul.navbar-nav{ padding-left: 100px; }
+#header ul li > a{
+  padding: 0 54px 0 0;
 }
 #header ul li:hover > a,
 #header ul li.active > a,
@@ -44,10 +48,17 @@ a, button{ text-decoration: none !important; outline: none !important; }
   /*font-weight: 600;*/
 } 
 #header ul li .dropdown-menu{
-  padding: 15px 0!important;
+  padding: 63px 0 0 0 !important;
+  border: 0;
+  border-radius: 0;
+  margin-left:-60px;
+  margin-top: -25px;
+  overflow: hidden;
 }
 #header ul li .dropdown-menu a{
-  padding: 15px 30px;
+  padding: 0 60px;
+  padding-bottom: 30px;
+  line-height: initial;
 }
 #header ul li.dropdown > a:after,
 #menuFloat ul li.dropdown > a:after{/* sin darle clic */
@@ -64,6 +75,8 @@ a, button{ text-decoration: none !important; outline: none !important; }
 .btnIniciarSesion{
   border-radius: 25px;
   padding: 8px 30px;
+  font-weight: 600;
+  border: 2px solid #FA4E41;
 }
 .SliderSombra{
   background: url(../img/slider-sombra.png) no-repeat;
@@ -146,6 +159,10 @@ a, button{ text-decoration: none !important; outline: none !important; }
 .p-t-0{ padding-top: 0; }
 .p-t-30{ padding-top: 30px; }
 /* border */
+.br-0{ border-radius: 0; }
+.b-0{ border: 0; }
+.b-r-0{ border-right: 0; }
+.b-l-0{ border-left: 0; }
 .b-l-5-E5E6E7{ border-left: 5px solid #E5E6E7; }
 .b-l-5-FFFFFF{ border-left: 5px solid #FFFFFF; }
 .b-b-1-E5E6E7{ border-bottom: 1px solid #E5E6E7; }
@@ -179,16 +196,12 @@ a, button{ text-decoration: none !important; outline: none !important; }
   list-style: none; 
   font-size: 14px; 
   padding-bottom: 20px;
+  font-weight: 600;
 }
 #footer ul li:last-child{ 
   padding-bottom: 0;
 }
-#footer ul li a{ color: #000;}
-#footer ul li.active a,
-#footer ul li a:active,
-#footer ul li a:hover{ 
-  font-weight: 600;
-}
+#footer ul li a{ color: #000; font-weight: 300; }
 /* como funciona */
 .fa-btn-gris:after,
 .fa-btn-warning:after,
@@ -231,6 +244,32 @@ a, button{ text-decoration: none !important; outline: none !important; }
   justify-content: center;
   height: 380px;
 }
+/* backoffice */
+.wrapper-page{
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.pageInicioSesion .fondo{
+  background-color: yellow;
+}
+.pageInicioSesion .fondo p{
+  position: absolute;
+  bottom: 0;
+}
+.
+/*.pageInicioSesion{
+  height: 100vh;
+  width: 100vh;
+}
+#inicioSesion p{
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+}*/
 /* media querie */
 @media (max-width: 414px){
   .fs-32{ font-size: 24px; }
@@ -256,10 +295,23 @@ a, button{ text-decoration: none !important; outline: none !important; }
     font-size: 14px; 
   }
   /* header */
+  #slider .mq,
+  #sliderComprometidos .mq{ 
+    text-align: center !important; 
+  }
   #header .navbar-collapse{ display: none; }
+  .btnIniciarFloat{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+  }
   #menuFloat{
     background: rgba(64, 64, 65, 0.6);
-    z-index: 15;
+    z-index: 9999;
     position: fixed;
     top: 0;
     left: 100%;
@@ -270,7 +322,6 @@ a, button{ text-decoration: none !important; outline: none !important; }
   #menuFloat.active{
     left: 0%;
   }
-
   #menuFloat .contenedor{
     background-color: white;
     bottom: 0;
@@ -428,22 +479,3 @@ a, button{ text-decoration: none !important; outline: none !important; }
     height: auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

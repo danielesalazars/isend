@@ -29,7 +29,7 @@
 
     <!-- PAGINA INICIO -->
     <section id="header">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bc-white">
         <div class="container">
           <a class="navbar-brand" href="./">
             <img src="./static/img/logo.svg" alt="" class="img-responsive">
@@ -37,17 +37,17 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse d-lg-block d-md-none" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Inicio 
+              <li class="nav-item active">
+                <a class="nav-link" href="./">Inicio 
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item dropdown active">
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Servicios
                 </a>
@@ -69,7 +69,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <button class="btn btn-outline-danger my-2 my-sm-0 btnIniciarSesion" type="submit">
-                Iniciar Sesión
+                Iniciar sesión
               </button>
             </form>
           </div>
@@ -84,9 +84,9 @@
           <div class="carousel-item active">            
             <picture>
               <source media="(max-width: 414px)" srcset="./static/img/mobile/slider3.jpg">
-              <img src="./static/img/slider3.png" class="w-100">
+              <img src="./static/img/slider3.jpg" class="w-100">
             </picture>
-            <div class="text-left carousel-caption SliderDescripcion mq">
+            <div class="text-center carousel-caption SliderDescripcion mq">
               <small class="fs-400 fw-300 m-b-15">SERVICIOS</small>
               <h5 class="fw-600 fs-40">Verificación domiciliaria</h5>
               <p>Constatamos la dirección del domicilio o empresa, evitando direcciones falsas o incorrectas.</p>
@@ -157,7 +157,7 @@
         </div>
       </div>
     </section>
-
+    
     <section id="footer" class="p-t-b-70">
       <div class="container">
         <div class="row">
@@ -166,13 +166,13 @@
           </div>
           <div class="col-12 m-b-30 col-md-2">
             <ul>
-              <li class="active"><a href="#">Sobre iSend</a></li>
-              <li><a href="#">Nosotros</a></li>
+              <li class="active">Sobre iSend</li>
+              <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
           </div>
           <div class="col-12 m-b-30 col-md-3">
             <ul>
-              <li class="active"><a href="#">Servicios</a></li>
+              <li class="active">Servicios</li>
               <li><a href="envio-paqueteria.html">Envío de paquetería</a></li>
               <li><a href="verificaciones-domiciliarias.html">Verificaciones domiciliarias</a></li>
               <li><a href="tercerizacion-de-motorizados.html">Tercerización de motorizados</a></li>
@@ -180,7 +180,7 @@
           </div>
           <div class="col-12 m-b-30 col-md-3">
             <ul>
-              <li class="active"><a href="#">Contáctanos</a></li>
+              <li class="active">Contáctanos</li>
               <li><a href="contacto-empresas.html">Empresas</a></li>
               <li><a href="contacto-motorizados.html">Mensajeros</a></li>
             </ul>
