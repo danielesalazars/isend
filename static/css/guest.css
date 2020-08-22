@@ -12,6 +12,11 @@ a:focus, button:focus{
   outline: none !important; 
 }
 .o-f-c{ object-fit: cover; }
+.inside-icon{
+  position: absolute;
+  right: 25px;
+  top: 7px;
+}
 /* BOOTSTRAP Customize */
 .btn-outline-danger{
   color: #FA4E41;
@@ -107,6 +112,10 @@ a:focus, button:focus{
   color: white !important;
   margin-top: 15px;
   padding: 10px 40px;
+}
+/* validation */
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  background-image: none;
 }
 /* background */
 .bc-white{ background-color: #FFFFFF; }
