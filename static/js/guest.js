@@ -21,14 +21,19 @@ jQuery(document).ready(function($) {
 
   //click a menu float moviles y click a close moviles
   $("#close").click(function(){
-    $("#menuFloat").toggleClass('active');
-    $("#menuFloat .contenedor").toggleClass('active');
-    //activando efecto de derecha a izquierda
     setTimeout(function () {
-      $("#menuFloat").toggleClass('d-none');
-    }, 300)
+      $("#menuFloat .contenedor").toggleClass('active');
+      $("#menuFloat").toggleClass('active');
 
+      setTimeout(function () {
+        $("#menuFloat").toggleClass('d-none');
+      },1000)
+
+    }, 300)
   })
+
+  //Datepicker
+  $('.datepicker').datepicker();
 
   // $(window).on("load", function () {
   //     alert("Window Loaded");

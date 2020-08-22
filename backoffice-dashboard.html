@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="./static/lib/fontawesome_5/css/all.min.css">
+    <!-- Fonts Google --> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS CUSTOMIZE -->
+    <link rel="stylesheet" href="./static/lib/datepicker/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="static/css/guest.css">
+    <link rel="icon" type="image/png" href="./static/img/favicon.svg">
+    <title>iSend</title>
+  </head>
+  <body class="bc-F2F2F2">
+    <!-- PREVIEW -->
+    <div class="preview d-none">
+      <div class="vh-100 d-flex justify-content-center align-items-center">
+        <a href=""></a>
+        <h1 class="text-white">iSend</h1>
+      </div>
+    </div>
+    <!-- END PREVIEW -->
+
+    <!-- PAGINA INICIO -->
+    <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bc-white">
+        <div class="container">
+          <a class="navbar-brand" href="./">
+            <img src="./static/img/logo.svg" alt="" class="img-responsive">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-block d-md-none" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="backoffice-dashboard.html">Dashboard 
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="backoffice-pendientes.html">Pendientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="backoffice-seguimiento.html">Seguimiento</a>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Roberto García
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index.html">Cerrar sesión</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="efectividad">
+      <div class="container p-t-70">
+        <div class="row p-b-30">
+          <div class="col-12 col-md-10 offset-md-1">
+            <div class="card card-sombra">
+              <div class="card-body p-30 mq">
+                <h4 class="fs-24 fw-600 fc-404041">Efectividad de entregas</h4>
+                <p class="fc-686868 b-b-1-E5E6E7 m-0 p-b-30">Mide la efectividad de tus entregas selecionando un rango de fechas.</p>
+                <div class="row p-t-50">
+                  <div class="col-10 offset-1">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="input-group">
+                          <input type="text" class="datepicker form-control b-r-0">
+                          <div class="input-group-prepend">
+                            <div class="calendario input-group-text bc-white b-l-0">
+                              <i class="m-0 fas fa-calendar-alt"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="input-group">
+                          <input type="text" class="datepicker form-control b-r-0">
+                          <div class="input-group-prepend">
+                            <div class="calendario input-group-text bc-white b-l-0">
+                              <i class="m-0 fas fa-calendar-alt"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row p-t-50 p-b-30 text-center">
+                      <div class="mx-auto col-4">
+                        <button class="btn btn-slider m-0 w-100">Buscar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-b-30">
+          <div class="col-12 col-md-10 offset-md-1">
+            <div class="card card-sombra">
+              <div class="card-body p-0 mq">
+                <div class="row">
+                  <div class="col-3 offset-1 b-r-1-E5E6E7 p-t-50 p-b-50">
+                    <div class="fw-600 fc-404041 m-b-25">Resultado</div>
+                    <h4 class="fs-24 fc-404041 m-b-10">Falabella</h4>
+                    <p class="fc-A6A6A6 m-b-30">Efectividad 98%</p>
+                    <a href="#" class="fw-600 fc-FA4E41i">
+                      <i class="fas fa-download"></i>
+                      Descargar
+                    </a>
+                  </div>
+                  <div class="col-7 offset-1 p-t-50 p-b-50">
+                    <img src="./static/img/grafico.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END PAGINA INICIO -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./static/lib/datepicker/bootstrap-datepicker.js"></script>
+    <script src="./static/js/guest.js"></script>
+  </body>
+</html>
