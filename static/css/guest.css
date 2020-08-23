@@ -122,6 +122,8 @@ a:focus, button:focus{
 .form-control.is-invalid, .was-validated .form-control:invalid{
   background-image: none;
 }
+/* bottom */
+.bottom-6{ bottom: 6px; }
 /* background */
 .bc-white{ background-color: #FFFFFF; }
 .bc-verde{ background-color: #6EC37C; }
@@ -671,5 +673,8 @@ a:focus, button:focus{
   /* backoffice */
   .pageInicioSesion .formulario img{
     padding-top: 30px;
+  }
+  .resultados{
+    position: relative;
   }
 }
