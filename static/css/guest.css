@@ -45,6 +45,7 @@ a:focus, button:focus{
   z-index: 9;
   line-height: 70px;
 }
+#header .navbar-toggler{ border: 0; }
 #header ul.navbar-nav{ padding-left: 100px; }
 #header ul li > a{
   padding: 0 54px 0 0;
@@ -487,6 +488,10 @@ a:focus, button:focus{
     font-size: 14px; 
   }
   /* header */
+  #header{
+    height: auto;
+    line-height: initial;
+  }
   #slider .mq,
   #sliderComprometidos .mq{ 
     text-align: center !important; 
@@ -588,9 +593,9 @@ a:focus, button:focus{
   }
   .pageInicio #slider .mq{ 
     padding:0; 
-    margin-top: -145px; 
+    /* margin-top: -145px; 
     left: 10%;
-    right: 10%;
+    right: 10%; */
   }
   /* paqueteria */
   #atencionPersonalizada p{ font-weight: 300; }
@@ -636,6 +641,10 @@ a:focus, button:focus{
     height: 240px;
   }
   /* empresa y motorizados*/
+  .pageEmpresas .carousel-item.active,
+  .pageMotorizados .carousel-item.active{
+    display: block !important;
+  }
   .pageEmpresas .SliderSombra,
   .pageMotorizados .SliderSombra{ 
     display: none; 
