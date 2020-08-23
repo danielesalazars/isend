@@ -6,6 +6,7 @@ body{
   font-size: 16px;
   font-weight: 400;/* normal*/
 }
+picture{ width: 100%; }
 a, button,
 a:focus, button:focus{ 
   text-decoration: none !important; 
@@ -86,6 +87,10 @@ a:focus, button:focus{
   padding: 8px 30px;
   font-weight: 600;
   border: 2px solid #FA4E41;
+}
+#slider .carousel-caption{
+  left: 0;
+  right: 0;
 }
 .SliderSombra{
   background: url(../img/slider-sombra.png) no-repeat;
