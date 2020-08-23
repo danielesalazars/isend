@@ -5,10 +5,10 @@ jQuery(document).ready(function($) {
     $(this).find(".dropdown-menu").toggleClass('show')
   })
   //cambiar esto para el submit de contacto
-  $(".cardContactoEmpresa").hover(function(){
-    $(this).find("#contactoEmpresa").toggleClass('d-none');
-    $(".gracias").toggleClass('d-none');
-  })
+  // $(".cardContactoEmpresa").hover(function(){
+  //   $(this).find("#contactoEmpresa").toggleClass('d-none');
+  //   $(".gracias").toggleClass('d-none');
+  // })
   //click a menu float moviles y click a close moviles
   $("#header button").click(function(){
       $("#menuFloat").toggleClass('d-none');
@@ -38,6 +38,10 @@ jQuery(document).ready(function($) {
   // $(window).on("load", function () {
   //     alert("Window Loaded");
   // });
+  //validando motorizados
+  if ( $( ".cardContactoEmpresa .was-validated" ).length ) {
+    console.log("hola");
+}
 
 });
 

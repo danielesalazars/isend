@@ -81,12 +81,12 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="SliderSombra"></div>
-          <div class="carousel-item active">            
+          <div class="carousel-item active d-flex align-items-center">            
             <picture>
               <!--<source media="(max-width: 414px)" srcset="./static/img/mobile/slider5.jpg">-->
               <img src="./static/img/slider5.jpg" class="d-none d-md-block w-100">
             </picture>
-            <div class="carousel-caption SliderDescripcion SliderForm">
+            <div class="carousel-caption SliderForm bottom-initial">
               <div class="row">
                 <div class="col-12 col-md-6">
                   <h5 class="title fw-600 fs-40 text-left">
@@ -95,20 +95,31 @@
                 </div>
                 <div class="col-12 col-md-6">
                   <div class="cardContactoEmpresa card p-20">
-                    <div class="card-body h-420">
-                      <form id="contactoEmpresa" action="#" class="">
+                    <div class="card-body">
+                      <form class="needs-validation" novalidate>
                         <h5 class="card-title fc-000000 m-0 p-b-40">Empieza mandándonos un mensaje</h5>
                         <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Nombre y apellido">
+                          <input type="text" class="form-control" placeholder="Nombre y apellido" required>
+                          <div class="text-left invalid-feedback">
+                           Este campo es obligatorio.
+                          </div>
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" placeholder="correo">
+                          <input type="email" class="form-control" placeholder="correo" required>
+                          <div class="text-left invalid-feedback">
+                            Este campo es obligatorio.
+                          </div>
                         </div>
                         <div class="form-group">
-                          <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Mensaje"></textarea>
+                          <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Mensaje" required></textarea>
+                          <div class="text-left invalid-feedback">
+                            Este campo es obligatorio.
+                          </div>
                         </div>
                         <div class="form-group m-0">
-                          <input type="subtmit" value="¡Enviar!" class="btn btn-slider">
+                          <div class="row col-10 offset-1">
+                            <input type="submit" value="¡Enviar!" class="btn btn-slider w-100">
+                          </div>
                         </div>
                       </form>
                       <div class="gracias text-center d-none">

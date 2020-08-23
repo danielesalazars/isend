@@ -101,11 +101,11 @@ a:focus, button:focus{
   top: 50%;
   margin-top: -100px;
 }
-.SliderForm{
+/* .SliderForm{
   bottom: 0;
   margin-top: -210px;
   padding: 0;
-}
+} */
 .btn-slider{
   background-color: #FA4E41 !important;
   border-radius: 25px;
@@ -201,6 +201,7 @@ a:focus, button:focus{
 .h-250{ height: 250px; }
 .h-265{ height: 265px; }
 .h-420{ height: 420px; }
+.h-480{ height: 480px; }
 .w-125{ width: 125px; }
 /* table */
 .table-estadistica thead th{
@@ -280,6 +281,7 @@ a:focus, button:focus{
   border: 6px solid #6EC37C;
 }
 /* servicios motorizado */
+.bottom-initial{ bottom: initial; }
 #servicios-motorizado .card-body{
   padding: 30px 1.25rem;
 }
